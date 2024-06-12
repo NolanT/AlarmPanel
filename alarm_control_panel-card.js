@@ -691,6 +691,13 @@ class AlarmControlPanelCard extends HTMLElement {
   getCardSize() {
     return 1;
   }
+
+  window.customCards = window.customCards || [];
+  window.customCards.push({
+    type: "alarm_control_panel-card",
+    name: "Alarm Control card",
+    description: "Custom alarm panel control",
+});
 }
 
 customElements.define('alarm_control_panel-card', AlarmControlPanelCard);
